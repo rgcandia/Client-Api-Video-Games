@@ -4,9 +4,9 @@ export default function Ratings({ratings}){
     return(<div className='ratings'>
         Ratings : <hr/>
         {ratings.map(e=>{
-           return(<div key={e.id} className='rating'>
+           return(<label key={e.id} >
             {e.title}  {e.percent}%
-           </div>)
+           </label>)
         })}
     </div>);
 }

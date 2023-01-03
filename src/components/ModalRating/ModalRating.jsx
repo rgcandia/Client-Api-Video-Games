@@ -10,7 +10,6 @@ export default function ModalRating(){
         dispatch(setModalRating(false))
     }
 function buttonHandler (text){
-     console.log(text)
       const Filter =   JSON.parse(JSON.stringify(filter));
       Filter.sort((a,b)=>{
          let indexA,indexB ;
