@@ -10,7 +10,7 @@ const{ currentGames,filter}  = useSelector(store=>store);
 useEffect(()=>{
   dispatch(setPaginaActual(1))  
   
-},[filte,dispatch])
+},[filter,dispatch])
 
     return <div className='cards'>
            
