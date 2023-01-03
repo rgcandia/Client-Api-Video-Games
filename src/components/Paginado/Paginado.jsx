@@ -7,15 +7,16 @@ import Button from '../Button/Button.jsx'
 function Paginado(){
     const dispatch = useDispatch();
     const {paginaActual,juegosPorPagina} = useSelector(state=>state);
+    const {filter} = useSelector(state=>state);
     let ultimoIndex = paginaActual * juegosPorPagina;
     let  primerIndex = ultimoIndex - juegosPorPagina;
-    const {filter} = useSelector(state=>state);
-    let value = filter.slice(primerIndex,ultimoIndex);
-
+    
+    
     useEffect(()=>{
+    let value = filter.slice(primerIndex,ultimoIndex);
     dispatch(setCurrentGames(value))
         
-    },[paginaActual,filter,dispatch]);
+    },[paginaActual,filter,dispatch,primerIndex,ultimoIndex]);
     
    
 
