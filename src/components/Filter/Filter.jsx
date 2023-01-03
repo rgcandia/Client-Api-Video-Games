@@ -29,8 +29,8 @@ function Filter (){
            const FilterAZ= JSON.parse(JSON.stringify(filter));//creo una copia de filter
            
             FilterAZ.sort((a,b)=>{
-                if(a.name<b.name){return -1}
-                if(a.name>b.name){return 1}
+                if(a.name.toLowerCase()<b.name.toLowerCase()){return -1}
+                if(a.name.toLowerCase()>b.name.toLowerCase()){return 1}
                 return 0;
             });
             dispatch(setFilter(FilterAZ))
@@ -38,8 +38,8 @@ function Filter (){
            case "Z-A":
             const FilterZA =JSON.parse(JSON.stringify(filter)); //creo una copia de filter 
             FilterZA.sort((a,b)=>{
-                if(a.name<b.name){return 1}
-                if(a.name>b.name){return -1}
+                if(a.name.toLowerCase()<b.name.toLowerCase()){return 1}
+                if(a.name.toLowerCase()>b.name.toLowerCase()){return -1}
                 return 0;
             }); 
             dispatch(setFilter(FilterZA));
