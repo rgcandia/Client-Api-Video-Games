@@ -16,7 +16,7 @@ function Details (){
     const {id} = useParams();
    useEffect(()=>{
     getGameId(id,dispatch)
-   },[]);
+   },[dispatch]);
    function buttonHandler(){navigate('/home')}
     return (
         <div className='details' >

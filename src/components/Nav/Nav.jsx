@@ -19,7 +19,8 @@ function Nav(){
         
     }
     useEffect(()=>{
-    {currentGames&&setLoader(false)}
+    // {currentGames&&setLoader(false)}
+    setLoader(false)
     },[currentGames]);
     return <div className='nav'>
        

@@ -15,7 +15,7 @@ function Paginado(){
     useEffect(()=>{
     dispatch(setCurrentGames(value))
         
-    },[paginaActual,filter]);
+    },[paginaActual,filter,dispatch,value]);
     
    
 
@@ -33,6 +33,8 @@ function Paginado(){
                     dispatch(setPaginaActual(paginaActual-1))
                 }
                 break; 
+             default :
+                
                 
         }
     
