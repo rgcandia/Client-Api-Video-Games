@@ -1,14 +1,15 @@
 
-import { useEffect, useState } from 'react';
+//  useEffect,
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {getGameName} from '../../redux/action/index.js';
-import Loader from '../Loader/Loader.jsx';
+// import Loader from '../Loader/Loader.jsx';
 import './Nav.css'
 import Button from '../Button/Button.jsx'
 function Nav(){
-    const {currentGames} = useSelector(state=>state);
+    // const {currentGames} = useSelector(state=>state);
     const dispatch = useDispatch();
-    const [loader,setLoader] = useState(false);
+    // const [loader,setLoader] = useState(false);
     const [search,setSearch] = useState("");
     function handleInput(e){
         setSearch(e.target.value)
@@ -18,10 +19,10 @@ function Nav(){
         getGameName(search,dispatch)
         
     }
-    useEffect(()=>{
-    // {currentGames&&setLoader(false)}
-    setLoader(false)
-    },[currentGames]);
+    // useEffect(()=>{
+    // // {currentGames&&setLoader(false)}
+    // setLoader(false)
+    // },[currentGames]);
     return <div className='nav'>
        
 
@@ -29,7 +30,7 @@ function Nav(){
         <Button texto='Buscar' buttonHandler={buttonHandler}/>
        
 
-        {loader&&<Loader/>}
+        {/* {loader&&<Loader/>} */}
     </div>
 }
 export default Nav;
