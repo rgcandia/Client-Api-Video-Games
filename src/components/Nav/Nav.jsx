@@ -1,7 +1,8 @@
 
 //  useEffect,
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+// , useSelector
+import { useDispatch } from 'react-redux';
 import {getGameName} from '../../redux/action/index.js';
 // import Loader from '../Loader/Loader.jsx';
 import './Nav.css'
