@@ -15,7 +15,7 @@ function Paginado(){
     useEffect(()=>{
     dispatch(setCurrentGames(value))
         
-    },[paginaActual,filter]);
+    },[paginaActual,filter,dispatch]);
     
    
 
