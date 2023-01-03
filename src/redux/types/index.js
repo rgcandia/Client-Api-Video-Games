@@ -1,0 +1,9 @@
+export const GET_GAMES = "GET_GAMES";
+export const GET_GAME_ID = "GET_GAME_ID";
+export const GET_GAME_NAME="GET_GAME_NAME";
+export const SET_CURRENT_GAMES="SET_CURRENT_GAMES";
+export const SET_FILTER="SET_FILTER";
+export const SET_PAGINA_ACTUAL="SET_PAGINA_ACTUAL";
+export const SET_MODAL = "SET_MODAL";
+export const GET_GENRES = "GET_GENRES";
+export const SET_MODAL_RATING = 'SET_MODAL_RATING'

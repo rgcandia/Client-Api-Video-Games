@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,500&display=swap');
+
+.details{
+    font-family: 'Chivo Mono', monospace;
+    color: aliceblue;
+
+  
+    display: flex;
+    flex-direction: column;
+   
+}
+.text{
+    width: 50%;
+   
+}
+ .name{
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(255,255,255,1);
+ }
+ .button{
+    margin: 10px;
+ }
+ .details label{
+    background-color: rgb(53, 55, 56);
+    margin: 5px;
+ }
+ .order{
+  
+   display: flex;
+   flex-direction: row;
+  
+   
+}

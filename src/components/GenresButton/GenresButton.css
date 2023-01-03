@@ -1,0 +1,9 @@
+.genres-button{
+    margin: 30px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}

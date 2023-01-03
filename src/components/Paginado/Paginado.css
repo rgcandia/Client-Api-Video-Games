@@ -1,0 +1,14 @@
+.paginado{
+    background:transparent;
+    max-width: 500px;
+    margin: 5px;
+    color: rgb(245, 247, 248);
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+}
+button{
+    margin: 20px;
+}

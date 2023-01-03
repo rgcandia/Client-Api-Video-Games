@@ -1,0 +1,10 @@
+.genres{
+    /* position: absolute; */
+    display: flex; 
+    flex-wrap:wrap;
+    /* alinea lateralmente */
+    justify-content: center; 
+    font-size: medium;
+    
+}
+

@@ -1,0 +1,18 @@
+.cards{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color:transparent;
+    max-width: 1000px;
+    height:100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+.cards label{
+    margin: 5px;
+    background-color: transparent;
+    
+}
+
+

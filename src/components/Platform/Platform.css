@@ -1,0 +1,10 @@
+.platform{
+    margin: 5px;
+    display: flex;
+    flex-direction:column;
+   
+}
+.texto{
+    cursor:auto;
+    user-select:auto;
+}

@@ -1,0 +1,24 @@
+.button-home{
+    background-color: rgb(168, 82, 207);
+    max-width: 150px;
+    border-radius: 5%;
+    padding: 5px;
+    user-select: none;
+    cursor:pointer;
+}
+.button-home:hover{
+    transition:all ease 0.5s;
+    background-color: rgb(219, 120, 228);
+    color: rgb(255, 255, 255);
+    /* transform: scale(0.95); */
+    
+}
+.button-home:active {
+    transform: scale(0.90);
+    /* cuando se hace click, se achica el tamaño*/
+    /* Scaling button to 0.98 to its original size */
+
+}
+ .button-home .texto{
+    cursor:pointer;
+ }

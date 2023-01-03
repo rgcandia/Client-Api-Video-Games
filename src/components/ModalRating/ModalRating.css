@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&display=swap');
+
+.modal-ratings{
+    font-family: 'Chivo Mono', monospace;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(177, 171, 171, 0.8);
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
