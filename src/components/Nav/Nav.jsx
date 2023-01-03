@@ -15,7 +15,7 @@ function Nav(){
         setSearch(e.target.value)
     }
     function buttonHandler(){
-        setLoader(true);
+        // setLoader(true);
         getGameName(search,dispatch)
         
     }
