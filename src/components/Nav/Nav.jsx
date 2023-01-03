@@ -19,7 +19,8 @@ function Nav(){
         
     }
     useEffect(()=>{
-    {currentGames&&setLoader(false)}
+    // {currentGames&&setLoader(false)}
+    setLoader(false)
     },[currentGames]);
     return <div className='nav'>
        
@@ -27,7 +28,7 @@ function Nav(){
         <input name='game' value={search} onChange={(e)=>{handleInput(e)}} placeholder="Busca un Video Juego . . ."></input>
         <Button texto='Buscar' buttonHandler={buttonHandler}/>
        
-
+        
         {loader&&<Loader/>}
     </div>
 }

@@ -33,6 +33,7 @@ function Paginado(){
                     dispatch(setPaginaActual(paginaActual-1))
                 }
                 break; 
+            default:    
                 
         }
     
