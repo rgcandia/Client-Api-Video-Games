@@ -2,7 +2,7 @@ import './Details.css';
 import { useSelector} from 'react-redux'
 import Genres from '../Genres/Genres';
 import { useParams,useNavigate} from 'react-router-dom';
-import {getGameId} from '../../redux/action/index.js';
+import {getGameId,setSelectedGame} from '../../redux/action/index.js';
 import {useDispatch} from 'react-redux';
 import { useEffect } from 'react';
 import Loader from '../Loader/Loader';
@@ -17,7 +17,7 @@ function Details (){
    useEffect(()=>{
     getGameId(id,dispatch)
    },[dispatch,id]);
-   function buttonHandler(){navigate('/home')}
+   function buttonHandler(){dispatch(setSelectedGame(null));navigate('/home')}
     return (
         <div className='details' >
          {!selectedGame&&<Loader/>}   

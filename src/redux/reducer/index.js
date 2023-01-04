@@ -1,4 +1,4 @@
-import { GET_GAMES, GET_GAME_ID,GET_GAME_NAME,GET_GENRES,SET_CURRENT_GAMES, SET_FILTER ,SET_MODAL,SET_PAGINA_ACTUAL,SET_MODAL_RATING} from "../types";
+import { SET_SELECTED_GAME, GET_GAMES, GET_GAME_ID,GET_GAME_NAME,GET_GENRES,SET_CURRENT_GAMES, SET_FILTER ,SET_MODAL,SET_PAGINA_ACTUAL,SET_MODAL_RATING} from "../types";
 const initialState = {
     allGames:null,
     filter:null,
@@ -60,6 +60,11 @@ const initialState = {
                 ...state,
                 modalRating:action.payload,
             }
+        case SET_SELECTED_GAME:
+            return{
+                ...state,
+                selectedGame:action.payload,
+            }    
 
     default:return state;    
     };

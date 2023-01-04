@@ -1,6 +1,6 @@
 
 
-import { GET_GENRES,GET_GAMES,GET_GAME_ID,GET_GAME_NAME ,SET_CURRENT_GAMES,SET_FILTER,SET_MODAL,SET_PAGINA_ACTUAL,SET_MODAL_RATING} from "../types"
+import { SET_SELECTED_GAME,GET_GENRES,GET_GAMES,GET_GAME_ID,GET_GAME_NAME ,SET_CURRENT_GAMES,SET_FILTER,SET_MODAL,SET_PAGINA_ACTUAL,SET_MODAL_RATING} from "../types"
 const URL_SERVER = 'https://server-api-video-game-production.up.railway.app'
 export  function getGames (dispatch){
   fetch(`${URL_SERVER}/videogames`)
@@ -63,6 +63,13 @@ export function setModalRating (value){
 
   return{
     type:SET_MODAL_RATING,
-    payload:value
+    payload:value,
+  }
+}
+
+export function setSelectedGame(value){
+  return {
+    type: SET_SELECTED_GAME,
+    payload:value,
   }
 }

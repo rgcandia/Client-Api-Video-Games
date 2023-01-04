@@ -7,3 +7,4 @@ export const SET_PAGINA_ACTUAL="SET_PAGINA_ACTUAL";
 export const SET_MODAL = "SET_MODAL";
 export const GET_GENRES = "GET_GENRES";
 export const SET_MODAL_RATING = 'SET_MODAL_RATING'
+export const  SET_SELECTED_GAME = 'SET_SELECTED_GAME'
