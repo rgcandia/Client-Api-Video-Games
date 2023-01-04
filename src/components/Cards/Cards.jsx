@@ -3,12 +3,12 @@ import { useSelector ,useDispatch} from 'react-redux';
 import Card from '../Card/Card.jsx';
 import Loader from '../Loader/Loader.jsx';
 import './Cards.css'
-import {setPaginaActual} from '../../redux/action/index.js'
+// import {setPaginaActual} from '../../redux/action/index.js'
 function Cards(){
 const dispatch = useDispatch();
 const{ currentGames,filter}  = useSelector(store=>store);
 useEffect(()=>{
-  dispatch(setPaginaActual(1))  
+  // dispatch(setPaginaActual(1))  
   
 },[filter,dispatch])
 

@@ -10,14 +10,15 @@ import Filter from '../Filter/Filter';
 import Modal from '../Modal/Modal';
 import ModalRating from '../ModalRating/ModalRating';
  function Home(){
- const {filter,modal,modalRating} = useSelector((state)=>state);
+ const {filter,modal,modalRating,allGames} = useSelector((state)=>state);
  
  const dispatch = useDispatch();
  useEffect(()=>{
- 
- getGames(dispatch);getGenres(dispatch) 
+  if(!allGames){
+    getGames(dispatch);getGenres(dispatch) 
+  }
 
- },[dispatch]);
+ },[dispatch,allGames]);
 
     return <div className='home'>
       
