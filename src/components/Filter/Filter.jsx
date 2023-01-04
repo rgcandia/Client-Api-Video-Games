@@ -43,6 +43,7 @@ function Filter (){
                 return 0;
             }); 
             dispatch(setFilter(FilterZA));
+            console.log(FilterZA)
             break;
          case 'Create Game':
              navigate('/create');
