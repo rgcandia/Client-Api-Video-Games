@@ -9,6 +9,7 @@ const initialState = {
     modal:false,
     genres:null,
     modalRating:false,
+    
 }
  function rootReducer(state=initialState,action){
     switch(action.type){
@@ -64,8 +65,8 @@ const initialState = {
             return{
                 ...state,
                 selectedGame:action.payload,
-            }    
-
+            }   
+       
     default:return state;    
     };
 };

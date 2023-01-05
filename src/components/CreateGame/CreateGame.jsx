@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 export default function CreateGame(){
     const {allGames} = useSelector(state=>state);
     const URL_SERVER = 'https://server-api-video-game-production.up.railway.app'
+    // const URL_SERVER = 'http://localhost:3001'
     const navigate = useNavigate()
     const platforms = ["PC","PlayStation","Xbox","iOS","Android","Apple Macintosh","Linux","Nintendo","Atari","Commodore / Amiga","SEGA","3DO","Neo Geo","Web"];
 

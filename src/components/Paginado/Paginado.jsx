@@ -13,8 +13,13 @@ function Paginado(){
     
     
     useEffect(()=>{
+
+   if(Array.isArray(filter)){
     let value = filter.slice(primerIndex,ultimoIndex);
     dispatch(setCurrentGames(value))
+   }else{
+    dispatch(setCurrentGames(null))
+   }
         
     },[paginaActual,filter,dispatch,primerIndex,ultimoIndex]);
     

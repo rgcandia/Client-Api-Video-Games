@@ -14,8 +14,10 @@ function Nav(){
         setSearch(e.target.value)
     }
     function buttonHandler(){
+        
         setLoader(true);
         getGameName(search,dispatch)
+       
         
     }
     useEffect(()=>{

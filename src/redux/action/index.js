@@ -2,6 +2,7 @@
 
 import { SET_SELECTED_GAME,GET_GENRES,GET_GAMES,GET_GAME_ID,GET_GAME_NAME ,SET_CURRENT_GAMES,SET_FILTER,SET_MODAL,SET_PAGINA_ACTUAL,SET_MODAL_RATING} from "../types"
 const URL_SERVER = 'https://server-api-video-game-production.up.railway.app'
+// const URL_SERVER = 'http://localhost:3001'
 export  function getGames (dispatch){
   fetch(`${URL_SERVER}/videogames`)
   .then(response=>response.json()) 
@@ -73,3 +74,4 @@ export function setSelectedGame(value){
     payload:value,
   }
 }
+

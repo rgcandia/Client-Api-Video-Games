@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useSelector ,useDispatch} from 'react-redux';
 import Card from '../Card/Card.jsx';
-import Loader from '../Loader/Loader.jsx';
+// import Loader from '../Loader/Loader.jsx';
+import Cards404 from '../404/Cards404.jsx';
 import './Cards.css'
 // import {setPaginaActual} from '../../redux/action/index.js'
 function Cards(){
@@ -14,7 +15,7 @@ useEffect(()=>{
 
     return <div className='cards'>
            
-            {!currentGames&&<Loader/>} 
+           {!currentGames&&<Cards404/>} 
             {currentGames&&currentGames.map(e=>{
                 return <Card key={e.id} name={e.name} 
                 background_image={e.background_image}
