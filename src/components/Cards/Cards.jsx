@@ -14,7 +14,7 @@ useEffect(()=>{
 },[filter,dispatch])
 
     return <div className='cards'>
-            {currentGames.length===0?<Cards404 text='No hay videojuegos en esta página'/>:null}
+            {Array.isArray(currentGames)&&currentGames.length===0?<Cards404 text='No hay videojuegos en esta p'/>:null}
            {!currentGames&&<Cards404 text='No se encontraron Video Games con ese nombre'/>} 
             {currentGames&&currentGames.map(e=>{
                 return <Card key={e.id} name={e.name} 
