@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import './CreateGame.css'
 import swal from 'sweetalert';
 import { useSelector } from 'react-redux';
+
 export default function CreateGame(){
     const {allGames} = useSelector(state=>state);
     const URL_SERVER = 'https://server-api-video-game-production.up.railway.app'
@@ -77,7 +78,10 @@ export default function CreateGame(){
                 'Content-Type': 'application/json'
             }
            })
-           .then(response=>{swal(msjOk).then(e=>{window.location.reload()})})
+           .then(response=>{swal(msjOk).then(e=>{
+            navigate('/home');
+            window.location.reload();
+        })})
            .catch(error=>{console.log('error de conexion'+error)})
            
           }else{
